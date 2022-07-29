@@ -1,0 +1,117 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Form</title>
+
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Varela'>
+    <link rel="stylesheet" href="./reg.css">
+
+</head>
+
+<body>
+
+    <body>
+
+        <form method="POST">
+            <div class="login-form">
+
+                <div class="wrapper wrapper--w680">
+                    <div class="white box">
+                        <div class="card-body"></br></br></br>
+                            <h2 class="title"><b>Registration Form</b></h2>
+
+                            <div class="row row-space">
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label">First name</label>
+                                        <input class="input--style-4" type="text" id="contact-name"
+                                            onkeyup="validateName()">
+                                        <span id="name-error"></span>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label">Last name</label>
+                                        <input class="input--style-4" type="text" id="contact-Lastname"
+                                            onkeyup="validateLastName()">
+                                        <span id="name-error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-space">
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label">Date Of Birth</label>
+                                        <div class="input-group-icon">
+                                            <input class="input--style-4 js-datepicker" type="date" name="date">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label">Gender</label>
+                                        <div class="p-t-10">
+                                            <label class="radio-container m-r-45">Male
+                                                <input type="radio" checked="checked" name="gender">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="radio-container">Female
+                                                <input type="radio" name="gender">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-space">
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label">Email</label>
+                                        <input class="input--style-4" type="email" name="email"
+                                            placeholder="eg-(abc@gmail.com)" id="contact-email"
+                                            onkeyup="validateEmail()">
+                                        <span id="email-error"></span>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label">Phone Number</label>
+                                        <input class="input--style-4" type="text" name="phone"
+                                            placeholder="eg-(1234567890)" id="contact-phone" onkeyup="validatePhone()">
+                                        <span id="phone-error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-group">
+
+                                <label class="label">Address</label>
+
+                                <textarea rows="6" cols="90" placeholder="Enter your address" id="contact-address"
+                                    onkeyup="validateAddress()"></textarea>
+                                <span id="address-error"></span>
+                                </textarea>
+                            </div>
+                        
+
+                        
+                            <button onclick="return validateForm()" class="btn btn--radius-2 btn--blue">Submit</button>
+                           
+                            <span id="submit-error"></span>
+
+        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>         
+
+        
+
+        <script src="register.js"></script>
+    </body>
+
+</html>
